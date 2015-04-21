@@ -1,12 +1,7 @@
-package paixu;
-
-/**
- * Created by miss on 15/4/21.21
- */
+package cn.paixu;
 
 public class InsertData {
-    public void insertDa(int []data){
-        System.out.println("...");
+    public void insertDa(int... data){
         for(int i=1;i<data.length;i++){
             int temp=data[i];//第一步取插入的数
             //判断插入的值与它插入位置的前一位进行比较，如果比前一位大，就不用变更位置，如果小于则下面

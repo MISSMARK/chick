@@ -1,0 +1,21 @@
+package paixu;
+
+import static org.junit.Assert.*;
+
+public class TestDataTest {
+
+    @org.junit.Before
+    public void setUp() throws Exception {
+
+    }
+
+    @org.junit.Test
+    public void testGetData() throws Exception {
+
+    }
+
+    @org.junit.Test
+    public void testMain() throws Exception {
+
+    }
+}
