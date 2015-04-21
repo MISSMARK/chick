@@ -1,0 +1,2 @@
+Dxdiag.exe
+msinfo32.exe
