@@ -12,8 +12,6 @@ public void insertMao(int []data){
     data[j]=data[j+1];  
     data[j+1]=temp;  
    }
-
-
   }  
  }
  }catch(Exception e){  
