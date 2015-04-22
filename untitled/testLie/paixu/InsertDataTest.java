@@ -22,8 +22,7 @@ public class InsertDataTest {
 
         InsertData ins = new InsertData();
         ins.insertDa(data);
-        System.out.println("");
-        System.out.println();
+
     }
 
     public String str;
