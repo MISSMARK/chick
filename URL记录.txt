@@ -1,0 +1,40 @@
+MEAVEN²Ö¿â
+http://10.10.5.249:8081/nexus/index.html#nexus-search;quick~spring
+admin
+admin123
+-----------------------------------------------
+SVNÐÞ¸Ä SCM Manager http://vm.internal.taqu.cn/ 
+zhengjiaju
+a123456
+------------------------------------------------
+jreÅäÖÃ -Dspring.profiles.active=test -XX:PermSize=512M -XX:MaxPermSize=512m
+------------------------------------------------
+ÐéÄâ»ú 
+10.10.60.99
+root
+haibao
+------------------------------------------------
+mysql ²âÊÔÊý¾Ý¿â
+#mysql local database setting
+jdbc.driver=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://10.10.20.205:3306/jiaoliuqu?useUnicode=true&characterEncoding=utf-8
+jdbc.username=javauser
+jdbc.password=java123456
+jdbc.username=root
+jdbc.password=rootdb1568
+jdbc.url=jdbc:mysql://10.10.60.32:3306/jiaoliuqu"
+jdbc.username = auto_test 
+jdbc.password =read1u5obcxB/>
+------------------------------------------------
+Á´½Óredis
+redis-cli.exe -h 10.10.20.205 -p 6789
+
+account:info:account_id sexual
+hget account:info:862976 sexual
+hgetall account:info:862976
+-----------------------------------------------
+solr
+http://localhost:8080/tq-search/solr_config/select?q=account_name:%E4%BA%8C%E7%88%B7&hl=true&hl.fl=account_name&wt=json&indent=false
+http://localhost:8080/tq-search/solr_config/spell?q=account_name:%E4%BA%8C%E7%88%B7
+http://localhost:8080/tq-search/solr_config/suggest?q=%E4%BA%8C
+http://localhost:8080/tq-search/solr_config/suggest?q=No&wt=json&indent=true&spellcheck.build=true
