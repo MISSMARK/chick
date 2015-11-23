@@ -14,6 +14,11 @@ jre配置 -Dspring.profiles.active=test -XX:PermSize=512M -XX:MaxPermSize=512m
 root
 haibao
 ------------------------------------------------
+测试服
+10.10.60.208 
+root 
+haibao
+------------------------------------------------
 mysql 测试数据库
 #mysql local database setting
 jdbc.driver=com.mysql.jdbc.Driver
@@ -38,3 +43,18 @@ http://localhost:8080/tq-search/solr_config/select?q=account_name:%E4%BA%8C%E7%8
 http://localhost:8080/tq-search/solr_config/spell?q=account_name:%E4%BA%8C%E7%88%B7
 http://localhost:8080/tq-search/solr_config/suggest?q=%E4%BA%8C
 http://localhost:8080/tq-search/solr_config/suggest?q=No&wt=json&indent=true&spellcheck.build=true
+----------------------------------------------
+刚发给我的sql
+select a.goods_id, concat(a.product_name,',',GROUP_CONCAT(ifnull(c.tag_name,''))) as product_name, a.create_time from shop_goods a LEFT OUTER JOIN tag_goods b on a.goods_id = b.goods_id LEFT OUTER JOIN tag c on b.tag_id = c.id where a.status = 1 and ((a.is_activity = 0 AND a.activity_type = 1) or (a.is_activity = 1 AND a.activity_type = 2)) GROUP BY a.goods_id
+----------------------------------------------
+https://github.com/justinsb/jetcd
+https://github.com/coreos/etcd
+10.10.60.211  10.10.60.210 10.10.60.99 
+2380
+2379
+etcd监听watch采用长轮询
+创建目录curl http://10.10.60.211:2379/v2/keys/search/solr -XPUT -d dir=true
+删除目录curl 'http://127.0.0.1:2379/v2/keys/foo_dir?dir=true&recursive=true' -XDELETE
+创建键值curl http://127.0.0.1:2379/v2/keys/search/solr/001 -XPUT -d value="Hello etcd"
+删除键值curl http://127.0.0.1:2379/v2/keys/search/solr/001 -XDELETE
+----------------------------------------------
